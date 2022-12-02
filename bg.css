@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background: #021625;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0c375c;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(76, 130, 231),
+    0 0 50px #4f90c9,
+    0 0 100px rgb(57, 158, 189);
+    animation: animate 15s linear infinite;
+}
+.bubbles span:nth-child(even)
+{  
+    background: rgb(7, 3, 3);
+    box-shadow: 0 0 0 10px rgb(170, 34, 10),
+    0 0 50px rgb(248, 235, 235),
+    0 0 100px rgb(255, 250, 250);
+    animation: animate 15s linear infinite;
+}
+   
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+
+
+}
