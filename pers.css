@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+header{
+    background-image:  radial-gradient(rgba(22, 17, 10, 0.5),rgba(0,0,0,0.5),rgba(19, 18, 18, 0.5)), url(bggg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#06223b;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(6, 30, 75),
+    0 0 50px #0a4a81,
+    0 0 100px rgb(9, 126, 161);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{  
+    background: rgb(3, 83, 83);
+    box-shadow: 0 0 0 10px rgb(3, 64, 71),
+    0 0 50px rgb(4, 100, 100),
+    0 0 100px rgb(7, 168, 168);
+    animation: animate 15s reverse infinite;
+    animation-duration: calc(125s / var(--i));
+}
+   
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+
+
+}
+
+    
+
+
+body{
+    background-image:  radial-gradient(rgba(22, 17, 10, 0.5),rgba(0,0,0,0.5),rgba(19, 18, 18, 0.5)), url(bggg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    
+
+}
+
+ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 15px;
+    color: #fff;
+
+}
+ul li{
+    display: inline-block;
+    color: #fff;
+   
+}
+
+ul li{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    
+}
+
+ul li a:hover{
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+ul li.active a{
+    background-color: #000;
+    color: #fff;
+    border-radius: 1px;
+    padding: 7px;
+}
+
+.logo img{
+    margin-top: 8px;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+
+}
+
+.button{
+    position: absolute;
+    top: 64%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #0c375c;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.5 ease;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-menu1{
+    display: none;
+    top: 4%;
+    position: relative;
+    
+    
+}
+
+.sub-menu1 ul{
+    position: absolute;
+    padding: 15px;
+    text-align: left;
+    width: 30px;
+}
+
+.main ul li:hover .sub-menu1{
+    display: none;
+    position: absolute;
+    background-color: #0c375c;
+    margin-top: 9px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu1{
+    display: block;
+    margin: 5px;
+    
+}
+
+.main ul li:hover .sub-menu1 ul li{
+    width: 55px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.5 ease;
+    border-radius: 0px;
+}
+.pd{
+    background-image: radial-gradient(rgba(22, 17, 10, 0.5),rgba(0,0,0,0.5),rgba(19, 18, 18, 0.5)), url(462802.jpg);
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.pd{
+    width: 80%;
+    height: auto;
+    border: 4px solid rgb(192, 194, 197);
+    border-radius: 0px 60px 0px 0px;
+    
+    
+   
+}
+
+#hedd{
+    font-size: 40px;
+    color: aliceblue;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-align: center;
+}
+table{
+    width: 130%;
+    margin: 40px;
+}
+.branch{
+    font-size: 20px;
+    color: rgb(133, 136, 141);
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding-left: 100px;
+}
+.content{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 50px;
+
+
+}
+fieldset{
+    border: 4px solid #fff;
+    border-radius: 30px;
+    margin: 30px;
+    
+}
+legend{
+    color: aliceblue;
+    font-size: 35px;
+    text-align: center;
+
+}
